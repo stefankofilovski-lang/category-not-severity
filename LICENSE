@@ -1,0 +1,54 @@
+Copyright (c) 2026 Stefan Kofilovski
+
+This repository contains two kinds of material, licensed separately.
+
+
+## Data, rubric and prompts
+
+`rubric.md`, `prompt_A_basic.txt`, `prompt_B_decomposed.txt`, `expert_labels.csv`,
+`label_corrections.csv`, `rubric_dev_exclusions.csv`, `model_outputs.csv` and
+`sample_v1_frozen.csv` are licensed under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0).
+
+    https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt this material for any purpose, including commercially,
+provided you give appropriate credit. Please cite:
+
+    S. Kofilovski. Category, Not Severity: How Large Language Models Misclassify
+    AI Incidents Under the EU AI Act Risk Taxonomy. Proceedings of the 28th
+    International Multiconference Information Society - SiKDD 2026, Ljubljana.
+
+Incident titles, descriptions and metadata in `sample_v1_frozen.csv` and
+`expert_labels.csv` originate from the AI Incident Database and remain subject to
+its terms: https://incidentdatabase.ai/
+
+
+## Code
+
+`08_analyze.py`, `09_ingest_labels.py` and `11_apply_corrections.py` are licensed
+under the MIT licence:
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in the
+Software without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+## Not covered
+
+Nothing here is legal advice. The interpretive positions in `rubric.md` are the
+first author's reading of Regulation (EU) 2024/1689 for research purposes and
+have no official standing.
