@@ -5,7 +5,7 @@ This repository contains two kinds of material, licensed separately.
 
 ## Data, rubric and prompts
 
-`rubric.md`, `prompt_A_basic.txt`, `prompt_B_decomposed.txt`, `expert_labels.csv`,
+`rubric.md`, `prompt_basic.txt`, `prompt_step_by_step.txt`, `expert_labels.csv`,
 `label_corrections.csv`, `rubric_dev_exclusions.csv`, `model_outputs.csv` and
 `sample_v1_frozen.csv` are licensed under the Creative Commons Attribution 4.0
 International licence (CC BY 4.0).
