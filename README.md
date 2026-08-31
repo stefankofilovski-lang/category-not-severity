@@ -8,8 +8,8 @@ multiconference, Ljubljana).
 
 144 incidents from the AI Incident Database, classified under the EU AI Act risk
 taxonomy by a lawyer working from a written rubric, and by 14 large language models
-under two prompts (basic and step-by-step). The paper reports where the models and the expert disagree, and in
-which direction.
+under two prompts (basic and step-by-step). The paper reports where the models and the
+expert disagree, and in which direction.
 
 ## Files
 
@@ -17,15 +17,25 @@ which direction.
 |---|---|
 | `rubric.md` | The annotation rubric. Frozen 26 August 2026, before any incident was labelled, and not revised afterwards. The interpretive positions in it are the first author's. |
 | `prompt_basic.txt` | The basic prompt — a minimal classification instruction, verbatim. |
-| `prompt_step_by_step.txt` | The step-by-step prompt — the statutory test as an explicit procedure, verbatim. Derived from the rubric and written before any incident was labelled. |
-| `expert_labels.csv` | The expert labels: one row per incident, each statutory step recorded separately, plus the final tier, a three-point confidence rating, whether the full AIID page was consulted, and a free-text note. |
+| `prompt_step_by_step.txt` | The step-by-step prompt — the Act's classification rules as an explicit procedure, verbatim. Derived from the rubric and written before any incident was labelled. |
+| `sample_v1_frozen.csv` | The drawn sample, with the stratum used only to obtain variety in the draw. The stratum is a keyword proxy, is frequently wrong, and was withheld from the annotator. |
+| `expert_labels.csv` | The expert labels: one row per incident, each step of the classification recorded separately, plus the final risk category, a three-point confidence rating, whether the full AIID page was consulted, and a free-text note. |
 | `label_corrections.csv` | Every field changed after labelling, with the reason. No entry is a fresh legal judgement: each either applies a ruling made on materially identical facts elsewhere in the sample, or is entailed by the decision procedure. |
 | `rubric_dev_exclusions.csv` | Six incidents used while drafting the rubric, excluded from the evaluation set because the labels on them are not independent. |
-| `sample_v1_frozen.csv` | The drawn sample, with the stratum used only to obtain variety in the draw. The stratum is a keyword proxy, is frequently wrong, and was withheld from the annotator. |
-| `model_outputs.csv` | 4,198 model classifications: incident, condition (`naive` = basic prompt, `decomposed` = step-by-step prompt), model, run, tier, per-step record (step-by-step only), and the model's one-sentence rationale. |
-| `08_analyze.py` | Agreement (quadratic weighted kappa with bootstrap intervals), self-consistency, error direction by Annex III membership, and step-level divergence. |
+| `model_outputs.csv` | 4,198 model classifications: incident, condition (`naive` = basic prompt, `decomposed` = step-by-step prompt), model, run, risk category, per-step record (step-by-step only), and the model's one-sentence rationale. Every model answered all 150 sampled incidents under both prompts, except Gemini 3 Flash, which declined two of them under the basic prompt on content-policy grounds and is scored over the 142 evaluation incidents it answered. The 150 are the 144 evaluated plus the 6 rubric-development incidents, which the analysis drops. |
+
+### Scripts
+
+The pipeline, in order. Each resolves paths relative to its own location, so no
+configuration is needed; set `PAPER_ROOT` to point them elsewhere.
+
+| file | contents |
+|---|---|
+| `06_classify.py` | The classification harness. One model, one incident per request, default sampling settings, no tools or web access; resumable, and it logs the cost of every call. Needs an OpenRouter key. `python 06_classify.py probe` checks the panel against live prices without one. |
+| `04_collect.py` | Collects the raw responses into the tidy CSV released here as `model_outputs.csv`, validating every id and every answer as it goes. |
 | `09_ingest_labels.py` | Reads the labelling workbooks and validates every value against the rubric's decision procedure. |
 | `11_apply_corrections.py` | Applies the corrections in `label_corrections.csv` and records them. |
+| `08_analyze.py` | Agreement (quadratic weighted kappa with bootstrap intervals), self-consistency, error direction by Annex III membership, and step-level divergence. |
 
 ## Reproducing the analysis
 
@@ -34,7 +44,10 @@ pip install pandas numpy
 python 08_analyze.py --split all
 ```
 
-The scripts resolve paths relative to their own location, so no configuration is needed.
+That reproduces the paper's numbers from the released labels and model outputs. Re-running
+the classifications themselves (`06_classify.py` then `04_collect.py`) costs money and
+will not reproduce them exactly: the models are served behind moving endpoints and are
+not deterministic.
 
 ## A note on one classification decision
 
@@ -54,7 +67,7 @@ terms.
 ## Citation
 
 ```
-S. Kofilovski. Category, Not Severity: How Large Language Models Misclassify AI
-Incidents Under the EU AI Act Risk Taxonomy. Proceedings of the 28th International
-Multiconference Information Society - SiKDD 2026, Ljubljana, October 2026.
+S. Kofilovski and G. Trajkov. Category, Not Severity: How Large Language Models
+Misclassify AI Incidents Under the EU AI Act Risk Taxonomy. Proceedings of the 29th
+International Multiconference Information Society - SiKDD 2026, Ljubljana, October 2026.
 ```

@@ -1,7 +1,9 @@
+.openrouter_key
 results/
 __pycache__/
 *.pyc
 .DS_Store
 agreement_*.csv
+consistency_*.csv
 error_direction_*.csv
 step_divergence_*.csv
