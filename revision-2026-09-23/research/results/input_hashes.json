@@ -1,0 +1,18 @@
+{
+  "agreement_all.csv": "e1b0c701f3272fad28e2c18b633a1a8712b19e2f1c0660a6bbf99f3b4700ff9f",
+  "AIID_Excel_Export-20260810.xlsx": "c5ecda9c49ef11238e38cb8c1b53a8e139b17388aac254d277c533e7d36f7d91",
+  "expert_labels.csv": "5c6f64bb07f4b2cda539089c373e0ccb5456cd0c84b0cfa2a8294f740c3c4336",
+  "label_corrections.csv": "248e884a9dbe5209b7654f03f1bf69703be3141257492540b8d2c15af54721b9",
+  "model_outputs.csv": "09321c9e6aca29c821b7a1918f51b3fdff4ec1fafc0a6d0c1a0b0733ae7d722e",
+  "original_classify.py": "677643a36cf7ad41208d1a685ae11d7d9a10ed57acc5301ed7928caf7598ef9a",
+  "original_corrections.py": "7d8dc0072feb5dccbdae0e5c55dc08a875daed2a9b295b0ac3afe83e8b442d89",
+  "original_sampling.py": "8d8a02f2c86261656dadb279d96c45b70ff2a3d20353d5b76c29450755a9b452",
+  "prompt_basic.txt": "9d3d443cc1804ab1551eb87cee40029b93e6b33ca82ef67a19800d044d8e7e82",
+  "prompt_step_by_step.txt": "ea5b24273e4288cb99516125ffb267e1f2dd96dde63e67fea3e84ab3fdd4dbbd",
+  "rubric.md": "8e589551d95cf76989152475e613d1993065aca7ff8cbf447d504fdb4438f382",
+  "rubric_dev_exclusions.csv": "e44ef15e1b9c2efcc6cc5f48450b170f60324347fa868e3ce4eb616fb4b14c5c",
+  "sample_v1_frozen.csv": "a25d49b4e122f3b57bf79d36a9215df538d3c3ce83ba933b8ef055ebb4ae57c5",
+  "submitted-v2.pdf": "92fd597112c3090613f9fc15de84f6632b09e2bdb967ee5af15c6e509b134040",
+  "submitted-v2.tex": "ecaef6a521ec059130e331a15fa13df946ba3a6dbb5a86596fe4478a456423f5",
+  "usage_log.csv": "ac7b5130227f122d5eea76e9c6458c8c387fd146d01abc58e6a4d81da76efa39"
+}

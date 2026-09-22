@@ -1,73 +1,34 @@
-# Category, Not Severity — replication materials
+# Legal Categories from Incident Reports
 
-Materials for *Category, Not Severity: How Large Language Models Misclassify AI
-Incidents Under the EU AI Act Risk Taxonomy* (SiKDD 2026, Information Society
-multiconference, Ljubljana).
+Replication materials for **Legal Categories from Incident Reports: Evaluating 14 LLMs under the EU AI Act**, by Stefan Kofilovski and Georgi Trajkov, SiKDD / Information Society 2026, submission 109.
 
-## What this is
+## Revised paper and companion
 
-144 incidents from the AI Incident Database, classified under the EU AI Act risk
-taxonomy by a lawyer working from a written rubric, and by 14 large language models
-under two prompts (basic and step-by-step). The paper reports where the models and the
-expert disagree, and in which direction.
+The revised four-page paper was resubmitted to EasyChair as version 3 on 23 September 2026. The paper and companion are in [`revision-2026-09-23/`](revision-2026-09-23/). Final conference acceptance remains a decision for the chairs.
 
-## Files
+- [Four-page paper](revision-2026-09-23/revision/paper/sikdd2026-revised.pdf)
+- [Supplement, S1–S15](revision-2026-09-23/revision/supplement.md)
+- [Response to reviewers](revision-2026-09-23/revision/review/response-to-reviewers.md)
+- [Reproduction instructions and file manifest](revision-2026-09-23/README.md)
 
-| file | contents |
-|---|---|
-| `rubric.md` | The annotation rubric. Frozen 26 August 2026, before any incident was labelled, and not revised afterwards. The interpretive positions in it are the first author's. |
-| `prompt_basic.txt` | The basic prompt — a minimal classification instruction, verbatim. |
-| `prompt_step_by_step.txt` | The step-by-step prompt — the Act's classification rules as an explicit procedure, verbatim. Derived from the rubric and written before any incident was labelled. |
-| `sample_v1_frozen.csv` | The drawn sample, with the stratum used only to obtain variety in the draw. The stratum is a keyword proxy, is frequently wrong, and was withheld from the annotator. |
-| `expert_labels.csv` | The expert labels: one row per incident, each step of the classification recorded separately, plus the final risk category, a three-point confidence rating, whether the full AIID page was consulted, and a free-text note. |
-| `label_corrections.csv` | Every field changed after labelling, with the reason. No entry is a fresh legal judgement: each either applies a ruling made on materially identical facts elsewhere in the sample, or is entailed by the decision procedure. |
-| `rubric_dev_exclusions.csv` | Six incidents used while drafting the rubric, excluded from the evaluation set because the labels on them are not independent. |
-| `model_outputs.csv` | 4,198 model classifications: incident, condition (`naive` = basic prompt, `decomposed` = step-by-step prompt), model, run, risk category, per-step record (step-by-step only), and the model's one-sentence rationale. Every model answered all 150 sampled incidents under both prompts, except Gemini 3 Flash, which declined two of them under the basic prompt on content-policy grounds and is scored over the 142 evaluation incidents it answered. The 150 are the 144 evaluated plus the 6 rubric-development incidents, which the analysis drops. |
+The paper compares 14 models with one lawyer's legal assessments of 144 AI incident records under two prompts. Exact agreement increases from 73.2% to 79.5%; the paired gain is 6.35 percentage points with a 95% incident-bootstrap interval of 2.93–9.87. Macro-F1 is almost unchanged. The paired QWK interval includes zero. These are agreement results, not independent validation of legal accuracy.
 
-### Scripts
+The separate 14-case evidence follow-up attempted 784 calls: 750 valid answers and 34 failures. Its short and expanded inputs, model/provider settings, parsed results and uncertainty calculations are included. No repeated-call variability or second-specialist annotation is claimed.
 
-The pipeline, in order. Each resolves paths relative to its own location, so no
-configuration is needed; set `PAPER_ROOT` to point them elsewhere.
+## Provenance
 
-| file | contents |
-|---|---|
-| `06_classify.py` | The classification harness. One model, one incident per request, default sampling settings, no tools or web access; resumable, and it logs the cost of every call. Needs an OpenRouter key. `python 06_classify.py probe` checks the panel against live prices without one. |
-| `04_collect.py` | Collects the raw responses into the tidy CSV released here as `model_outputs.csv`, validating every id and every answer as it goes. |
-| `09_ingest_labels.py` | Reads the labelling workbooks and validates every value against the rubric's decision procedure. |
-| `11_apply_corrections.py` | Applies the corrections in `label_corrections.csv` and records them. |
-| `08_analyze.py` | Agreement (quadratic weighted kappa with bootstrap intervals), self-consistency, error direction by Annex III membership, and step-level divergence. |
+The original files at the repository root are preserved. They document the executed prompts, rubric, labels, corrections and model outputs, including limitations identified during revision. The earlier README's claim that the rubric never changed during annotation is superseded: the correction log records 19 field changes across ten incidents. The author states that these changes preceded his inspection of model answers. Six development examples are excluded from the 144-record evaluation.
 
-## Reproducing the analysis
+The later audit took place after the model runs. AI selected and prepared cases; the author made the three recorded case judgments. Draft AI recommendations did not replace the expert labels or generate the paper's reported results. Independent specialist validation remains unperformed. The study interprets results against the July 2024 framework; the executed prompts did not uniformly fix a legal version.
 
-```
-pip install pandas numpy
-python 08_analyze.py --split all
-```
+## Reproduce the revised results
 
-That reproduces the paper's numbers from the released labels and model outputs. Re-running
-the classifications themselves (`06_classify.py` then `04_collect.py`) costs money and
-will not reproduce them exactly: the models are served behind moving endpoints and are
-not deterministic.
-
-## A note on one classification decision
-
-The treatment of third-party misuse of general-purpose generative systems — a fraudster
-using an off-the-shelf voice cloner, for instance — is the single most consequential
-judgement in the study. It is classified under Art. 50 rather than Art. 5, on the
-reasoning set out in the rubric, and reversing it inverts the ranking of the models.
-The per-step labels allow the alternative reading to be scored; the paper reports the
-decision as a decision.
+Use the requirements and commands in the [companion README](revision-2026-09-23/README.md). Numerical reproduction uses archived inputs and predictions, makes no new model calls and requires no API credentials. The original root scripts are retained as historical research material; use the revision's scripts for its reported calculations.
 
 ## Licence
 
-Rubric, prompts and labels: CC BY 4.0. Analysis scripts: MIT. See `LICENSE`.
-Incident text and metadata are from the AI Incident Database and remain subject to its
-terms.
+Rubric, prompts and labels: CC BY 4.0. Analysis scripts: MIT. See [LICENSE](LICENSE). Incident text and metadata originate from the AI Incident Database and remain subject to its terms.
 
 ## Citation
 
-```
-S. Kofilovski and G. Trajkov. Category, Not Severity: How Large Language Models
-Misclassify AI Incidents Under the EU AI Act Risk Taxonomy. Proceedings of the 29th
-International Multiconference Information Society - SiKDD 2026, Ljubljana, October 2026.
-```
+Stefan Kofilovski and Georgi Trajkov. 2026. Legal Categories from Incident Reports: Evaluating 14 LLMs under the EU AI Act. Information Society 2026, SiKDD, Ljubljana. DOI: [10.70314/is.2026.sikdd.109](https://doi.org/10.70314/is.2026.sikdd.109).

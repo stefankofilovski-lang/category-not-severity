@@ -7,3 +7,14 @@ agreement_*.csv
 consistency_*.csv
 error_direction_*.csv
 step_divergence_*.csv
+
+# Local working material and credentials do not belong in the research release.
+.codex/
+.agents/
+.env
+.env.*
+**/private/
+**/internal/
+**/author-only/
+*.bundle
+*.log

@@ -1,0 +1,75 @@
+{
+  "individual_gains": [
+    {
+      "model": "gemini37f",
+      "change_pp": 2.777777777777779
+    },
+    {
+      "model": "gemini3f",
+      "change_pp": 0.6944444444444531
+    },
+    {
+      "model": "gemma27b",
+      "change_pp": -2.083333333333337
+    },
+    {
+      "model": "gpt52",
+      "change_pp": -3.472222222222221
+    },
+    {
+      "model": "gpt56luna",
+      "change_pp": -9.027777777777779
+    },
+    {
+      "model": "gpt56sol",
+      "change_pp": -6.25
+    },
+    {
+      "model": "grok46",
+      "change_pp": 8.333333333333337
+    },
+    {
+      "model": "haiku45",
+      "change_pp": 36.80555555555555
+    },
+    {
+      "model": "kimi25",
+      "change_pp": 11.805555555555557
+    },
+    {
+      "model": "kimi3",
+      "change_pp": -2.083333333333326
+    },
+    {
+      "model": "qwen3827b",
+      "change_pp": 7.638888888888884
+    },
+    {
+      "model": "qwen38max",
+      "change_pp": 6.25
+    },
+    {
+      "model": "sonnet46",
+      "change_pp": 22.22222222222222
+    },
+    {
+      "model": "sonnet5",
+      "change_pp": 15.277777777777779
+    }
+  ],
+  "mean_pp": 6.349206349206349,
+  "median_pp": 4.513888888888889,
+  "positive_models": 9,
+  "negative_models": 5,
+  "unchanged_models": 0,
+  "largest_gain": {
+    "model": "haiku45",
+    "change_pp": 36.80555555555555
+  },
+  "largest_share_of_sum": 0.41406249999999994,
+  "leave_one_model_out_mean_range_pp": [
+    4.006410256410256,
+    7.532051282051281
+  ],
+  "interpretation": "Descriptive fixed-panel heterogeneity; not a model-population confidence interval or a reason to remove any model."
+}

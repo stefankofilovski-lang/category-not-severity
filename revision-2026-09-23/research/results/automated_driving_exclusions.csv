@@ -1,0 +1,16 @@
+sample_id,split,year,title,L1_art5_prohibited,L3_annex_i_product,L2_annex_iii_domain,L4_art6_3_derogation,L5_profiling_override,L6_art50_transparency,FINAL_risk_tier,confidence_1to3,consulted_full_page,notes
+S008,heldout,2020,Tesla Autopilot Mistakes Red Letters on Flag for Red Traffic Lights,no,yes,none,not_applicable,not_applicable,no,high,3,yes,
+S009,heldout,2019,"Tesla Model 3 on Autopilot Crashed into a Ford Explorer Pickup, Killing a Fifteen-Year-Old in California",no,yes,none,not_applicable,not_applicable,no,high,3,yes,
+S016,heldout,2022,Cruise Autonomous Taxi Allegedly Bolted off from Police After Being Pulled over in San Francisco,no,yes,none,not_applicable,not_applicable,no,high,3,yes,
+S030,heldout,2019,"Tesla on Autopilot Crashed into Trailer Truck in Florida, Killing Driver",no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S037,heldout,2022,XPeng P7 Crashed into Truck in Shangdong While on Automatic Navigation Assisted Driving,no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S042,dev,2016,"Tesla FSD Reportedly Increased Crash Risk, Prompting Recall",no,yes,none,not_applicable,not_applicable,no,high,3,no,"Full Self-Driving is an AI component of a motor vehicle, a product type normally subject to third-party conformity assessment."
+S050,heldout,2021,Tesla FSD Misidentified Truck Hauling Traffic Lights as Trail of Traffic Lights,no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S052,heldout,2023,Tesla on Autopilot Struck Parked Work Truck on Highway in Pennsylvania,no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S062,heldout,2023,Waymo Software Flaw Reportedly Leads to Double Collision with Tow Truck,no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S070,heldout,2024,"Tesla Reportedly in Autopilot Mode Hits Parked Police Vehicle in Fullerton, California",no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S071,heldout,2024,NHTSA Opens New Probe into Tesla’s Autopilot Following More than a Dozen Fatal Accidents,no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S090,heldout,2025,Tesla Cybertruck Operating in Full Self-Driving Mode Reportedly Crashes into Pole in Nevada After Failing to Merge,no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S138,heldout,2026,Waymo Robotaxi Reportedly Entered Flooded San Antonio Roadway and Was Swept Into Waterway,no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S142,heldout,2026,Waymo Robotaxi Reportedly Caught Fire After Driving Over Firework in San Francisco,no,yes,none,not_applicable,not_applicable,no,high,3,no,
+S146,heldout,2026,Waymo Robotaxi Reportedly Remained Immobilized While Vandals Smashed Vehicle with Passenger Inside,no,yes,none,not_applicable,not_applicable,no,high,3,no,

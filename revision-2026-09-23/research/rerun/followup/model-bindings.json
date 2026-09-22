@@ -1,0 +1,876 @@
+{
+  "gemini37f": {
+    "original_slug": "google/gemini-3.7-flash",
+    "current_slug": "google/gemini-3.7-flash",
+    "original_canonical": "google/gemini-3.7-flash-20260813",
+    "current_canonical": "google/gemini-3.7-flash-20260813",
+    "canonical_matches": true,
+    "original_defaults": {},
+    "current_defaults": {},
+    "original_reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    },
+    "current_reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    },
+    "pricing": {
+      "prompt": "0.00000075",
+      "completion": "0.00000375",
+      "image": "0.00000075",
+      "audio": "0.00000075",
+      "input_audio_cache": "0.000000075",
+      "web_search": "0.014",
+      "internal_reasoning": "0.00000375",
+      "input_cache_read": "0.000000075",
+      "input_cache_write": "0.0000000416666666666667"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/google/gemini-3.7-flash/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "91870cd10fef2435cc8e3de0a0c1ccb1c2fee17b399131b3b0356515fe5b456a",
+    "retrieved_at": "2026-09-22T12:25:51.029264+00:00",
+    "endpoints_count": 6,
+    "endpoint": "google-ai-studio",
+    "provider_name": "Google AI Studio",
+    "endpoint_pricing": {
+      "prompt": "0.00000075",
+      "completion": "0.00000375",
+      "image": "0.00000075",
+      "audio": "0.00000075",
+      "input_audio_cache": "0.000000075",
+      "web_search": "0.014",
+      "internal_reasoning": "0.00000375",
+      "input_cache_read": "0.000000075",
+      "input_cache_write": "0.0000000416666666666667",
+      "discount": 0.5
+    },
+    "quantization": "unknown"
+  },
+  "gemini3f": {
+    "original_slug": "google/gemini-3-flash-preview",
+    "current_slug": "google/gemini-3-flash-preview",
+    "original_canonical": "google/gemini-3-flash-preview-20251217",
+    "current_canonical": "google/gemini-3-flash-preview-20251217",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "current_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "original_reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "high",
+        "medium",
+        "low",
+        "minimal"
+      ],
+      "default_effort": "medium"
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "high",
+        "medium",
+        "low",
+        "minimal"
+      ],
+      "default_effort": "medium"
+    },
+    "pricing": {
+      "prompt": "0.0000005",
+      "completion": "0.000003",
+      "image": "0.0000005",
+      "audio": "0.000001",
+      "input_audio_cache": "0.0000001",
+      "web_search": "0.014",
+      "internal_reasoning": "0.000003",
+      "input_cache_read": "0.00000005",
+      "input_cache_write": "0.0000000833333333333333"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/google/gemini-3-flash-preview/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "3d01e3aaad3107d61602cb746708eb39ce138bf1a33a1ae58e2c0adeae1928fb",
+    "retrieved_at": "2026-09-22T12:25:50.872572+00:00",
+    "endpoints_count": 6,
+    "endpoint": "google-ai-studio",
+    "provider_name": "Google AI Studio",
+    "endpoint_pricing": {
+      "prompt": "0.0000005",
+      "completion": "0.000003",
+      "image": "0.0000005",
+      "audio": "0.000001",
+      "input_audio_cache": "0.0000001",
+      "web_search": "0.014",
+      "internal_reasoning": "0.000003",
+      "input_cache_read": "0.00000005",
+      "input_cache_write": "0.0000000833333333333333",
+      "discount": 0
+    },
+    "quantization": "unknown"
+  },
+  "gemma27b": {
+    "original_slug": "google/gemma-3-27b-it",
+    "current_slug": "google/gemma-3-27b-it",
+    "original_canonical": "google/gemma-3-27b-it",
+    "current_canonical": "google/gemma-3-27b-it",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    },
+    "current_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    },
+    "original_reasoning": null,
+    "current_reasoning": null,
+    "pricing": {
+      "prompt": "0.00000008",
+      "completion": "0.00000045",
+      "input_cache_read": "0.00000004"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/google/gemma-3-27b-it/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "587cab56fc08ebf56f0deec949d65902cc9987c6b592f5c15451d85e9cdb3695",
+    "retrieved_at": "2026-09-22T12:25:50.886142+00:00",
+    "endpoints_count": 4,
+    "endpoint": "novita/bf16",
+    "provider_name": "Novita",
+    "endpoint_pricing": {
+      "prompt": "0.000000119",
+      "completion": "0.0000002",
+      "discount": 0
+    },
+    "quantization": "bf16"
+  },
+  "gpt52": {
+    "original_slug": "openai/gpt-5.2",
+    "current_slug": "openai/gpt-5.2",
+    "original_canonical": "openai/gpt-5.2-20251211",
+    "current_canonical": "openai/gpt-5.2-20251211",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "current_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "original_reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    },
+    "pricing": {
+      "prompt": "0.00000175",
+      "completion": "0.000014",
+      "web_search": "0.01",
+      "input_cache_read": "0.000000175"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/openai/gpt-5.2/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "fdb0d87ca1ba95d3b19b9d53015355f759d66f2f236fc99ebde087a398facedb",
+    "retrieved_at": "2026-09-22T12:25:50.878603+00:00",
+    "endpoints_count": 4,
+    "endpoint": "openai",
+    "provider_name": "OpenAI",
+    "endpoint_pricing": {
+      "prompt": "0.00000175",
+      "completion": "0.000014",
+      "web_search": "0.01",
+      "input_cache_read": "0.000000175",
+      "discount": 0
+    },
+    "quantization": "unknown"
+  },
+  "gpt56luna": {
+    "original_slug": "openai/gpt-5.6-luna",
+    "current_slug": "openai/gpt-5.6-luna",
+    "original_canonical": "openai/gpt-5.6-luna-20260709",
+    "current_canonical": "openai/gpt-5.6-luna-20260709",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "current_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "original_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000012",
+      "web_search": "0.01",
+      "input_cache_read": "0.00000002",
+      "input_cache_write": "0.00000025",
+      "overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.0000004",
+          "completion": "0.0000018",
+          "input_cache_read": "0.00000004",
+          "input_cache_write": "0.0000005"
+        }
+      ]
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/openai/gpt-5.6-luna/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "62c66873e857b072eba08992ba78500c37d46f8c9318db84bc172b6b308086c1",
+    "retrieved_at": "2026-09-22T12:25:51.096730+00:00",
+    "endpoints_count": 7,
+    "endpoint": "openai",
+    "provider_name": "OpenAI",
+    "endpoint_pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000012",
+      "web_search": "0.01",
+      "input_cache_read": "0.00000002",
+      "input_cache_write": "0.00000025",
+      "discount": 0,
+      "overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.0000004",
+          "completion": "0.0000018",
+          "input_cache_read": "0.00000004",
+          "input_cache_write": "0.0000005"
+        }
+      ]
+    },
+    "quantization": "unknown"
+  },
+  "gpt56sol": {
+    "original_slug": "openai/gpt-5.6-sol",
+    "current_slug": "openai/gpt-5.6-sol",
+    "original_canonical": "openai/gpt-5.6-sol-20260709",
+    "current_canonical": "openai/gpt-5.6-sol-20260709",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "current_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "original_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "none"
+      ],
+      "default_effort": "medium"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000002",
+      "input_cache_write": "0.0000025",
+      "overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.000004",
+          "completion": "0.000015",
+          "input_cache_read": "0.0000004",
+          "input_cache_write": "0.000005"
+        }
+      ]
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/openai/gpt-5.6-sol/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "068921a368986ef1592e6ffcca3cd2ab9a3e87eefd3e72bb8bdd0ab4d8a09413",
+    "retrieved_at": "2026-09-22T12:25:51.104309+00:00",
+    "endpoints_count": 7,
+    "endpoint": "openai",
+    "provider_name": "OpenAI",
+    "endpoint_pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000002",
+      "input_cache_write": "0.0000025",
+      "discount": 0.5,
+      "overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.000004",
+          "completion": "0.000015",
+          "input_cache_read": "0.0000004",
+          "input_cache_write": "0.000005"
+        }
+      ]
+    },
+    "quantization": "unknown"
+  },
+  "grok46": {
+    "original_slug": "x-ai/grok-4.6",
+    "current_slug": "x-ai/grok-4.6",
+    "original_canonical": "x-ai/grok-4.6-20260810",
+    "current_canonical": "x-ai/grok-4.6-20260810",
+    "canonical_matches": true,
+    "original_defaults": {},
+    "current_defaults": {},
+    "original_reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "high"
+    },
+    "current_reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "high"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "web_search": "0.005",
+      "input_cache_read": "0.0000005",
+      "overrides": [
+        {
+          "min_prompt_tokens": 200000,
+          "prompt": "0.000004",
+          "completion": "0.000012",
+          "input_cache_read": "0.000001"
+        }
+      ]
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/x-ai/grok-4.6/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "ff10af0f7bebe6583911b748a2ecb0d8c203aef351b5089af68e3022ae3f9109",
+    "retrieved_at": "2026-09-22T12:25:51.093730+00:00",
+    "endpoints_count": 5,
+    "endpoint": "xai",
+    "provider_name": "xAI",
+    "endpoint_pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "web_search": "0.005",
+      "input_cache_read": "0.0000005",
+      "discount": 0,
+      "overrides": [
+        {
+          "min_prompt_tokens": 200000,
+          "prompt": "0.000004",
+          "completion": "0.000012",
+          "input_cache_read": "0.000001"
+        }
+      ]
+    },
+    "quantization": "unknown"
+  },
+  "haiku45": {
+    "original_slug": "anthropic/claude-haiku-4.5",
+    "current_slug": "anthropic/claude-haiku-4.5",
+    "original_canonical": "anthropic/claude-4.5-haiku-20251001",
+    "current_canonical": "anthropic/claude-4.5-haiku-20251001",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "current_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "original_reasoning": {
+      "mandatory": false
+    },
+    "current_reasoning": {
+      "mandatory": false
+    },
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.000005",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.00000125",
+      "input_cache_write_1h": "0.000002"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/anthropic/claude-haiku-4.5/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "7a935ded623e29090d93d982d24b57eeb9b35d82428daab16d6722853fb79360",
+    "retrieved_at": "2026-09-22T12:25:50.957473+00:00",
+    "endpoints_count": 8,
+    "endpoint": "anthropic",
+    "provider_name": "Anthropic",
+    "endpoint_pricing": {
+      "prompt": "0.000001",
+      "completion": "0.000005",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.00000125",
+      "input_cache_write_1h": "0.000002",
+      "discount": 0
+    },
+    "quantization": "unknown"
+  },
+  "kimi25": {
+    "original_slug": "moonshotai/kimi-k2.5",
+    "current_slug": "moonshotai/kimi-k2.5",
+    "original_canonical": "moonshotai/kimi-k2.5-0127",
+    "current_canonical": "moonshotai/kimi-k2.5-0127",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "current_defaults": {
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "original_reasoning": {
+      "mandatory": false,
+      "default_enabled": true
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "default_enabled": true
+    },
+    "pricing": {
+      "prompt": "0.00000045",
+      "completion": "0.00000225",
+      "input_cache_read": "0.00000007"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.5/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "c9dea6c12b41e51d7e6945134b2094c9fefbd82141661a40c342dd2e7c41094e",
+    "retrieved_at": "2026-09-22T12:25:50.925121+00:00",
+    "endpoints_count": 5,
+    "endpoint": "novita",
+    "provider_name": "Novita",
+    "endpoint_pricing": {
+      "prompt": "0.00000057",
+      "completion": "0.00000285",
+      "input_cache_read": "0.000000095",
+      "discount": 0.05
+    },
+    "quantization": "unknown"
+  },
+  "kimi3": {
+    "original_slug": "moonshotai/kimi-k3",
+    "current_slug": "moonshotai/kimi-k3",
+    "original_canonical": "moonshotai/kimi-k3-20260715",
+    "current_canonical": "moonshotai/kimi-k3-20260715",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": null,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "current_defaults": {
+      "temperature": null,
+      "top_p": 0.95,
+      "top_k": null,
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null
+    },
+    "original_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "high",
+        "low"
+      ],
+      "default_effort": "max"
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "high",
+        "low"
+      ],
+      "default_effort": "max"
+    },
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "input_cache_read": "0.0000003"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k3/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "0221fc03294cb03774204cac92da0e1abca512acdeef5dac8289f4ebb1c747ec",
+    "retrieved_at": "2026-09-22T12:25:51.029264+00:00",
+    "endpoints_count": 20,
+    "endpoint": "moonshotai/mxfp4",
+    "provider_name": "Moonshot AI",
+    "endpoint_pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "input_cache_read": "0.0000003",
+      "discount": 0
+    },
+    "quantization": "mxfp4"
+  },
+  "qwen3827b": {
+    "original_slug": "qwen/qwen3.8-27b",
+    "current_slug": "qwen/qwen3.8-27b",
+    "original_canonical": "qwen/qwen3.8-27b-20260814",
+    "current_canonical": "qwen/qwen3.8-27b-20260814",
+    "canonical_matches": true,
+    "original_defaults": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "current_defaults": {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20
+    },
+    "original_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "xhigh",
+        "medium",
+        "low"
+      ],
+      "default_effort": "xhigh"
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "xhigh",
+        "medium",
+        "low"
+      ],
+      "default_effort": "xhigh"
+    },
+    "pricing": {
+      "prompt": "0.00000042",
+      "completion": "0.000003",
+      "input_cache_read": "0.000000085"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/qwen/qwen3.8-27b/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "e0b16bbfb1507b30d89fe91aa75cdaf26eeb3cb16c1d7b51b57543f6eee41389",
+    "retrieved_at": "2026-09-22T12:25:51.028294+00:00",
+    "endpoints_count": 17,
+    "endpoint": "alibaba",
+    "provider_name": "Alibaba",
+    "endpoint_pricing": {
+      "prompt": "0.000000425",
+      "completion": "0.00000255",
+      "input_cache_read": "0.000000085",
+      "input_cache_write": "0.00000053125",
+      "discount": 0
+    },
+    "quantization": "unknown"
+  },
+  "qwen38max": {
+    "original_slug": "qwen/qwen3.8-max",
+    "current_slug": "qwen/qwen3.8-max-0902",
+    "original_canonical": "qwen/qwen3.8-max-20260803",
+    "current_canonical": "qwen/qwen3.8-max-20260902",
+    "canonical_matches": false,
+    "original_defaults": {},
+    "current_defaults": {},
+    "original_reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "minimal"
+      ],
+      "default_effort": "xhigh"
+    },
+    "current_reasoning": {
+      "mandatory": true,
+      "default_enabled": true,
+      "supported_efforts": [
+        "xhigh",
+        "high",
+        "medium",
+        "low",
+        "minimal"
+      ],
+      "default_effort": "xhigh"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "input_cache_read": "0.00000025",
+      "input_cache_write": "0.0000025"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/qwen/qwen3.8-max-0902/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "3381595f812d626eb0d779cf823b161a3d5fe4a20256d9afb8fc4e2b4957cd12",
+    "retrieved_at": "2026-09-22T12:25:51.013694+00:00",
+    "endpoints_count": 1,
+    "endpoint": "alibaba",
+    "provider_name": "Alibaba",
+    "endpoint_pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "input_cache_read": "0.00000025",
+      "input_cache_write": "0.0000025",
+      "discount": 0
+    },
+    "quantization": "unknown"
+  },
+  "sonnet46": {
+    "original_slug": "anthropic/claude-sonnet-4.6",
+    "current_slug": "anthropic/claude-sonnet-4.6",
+    "original_canonical": "anthropic/claude-4.6-sonnet-20260217",
+    "current_canonical": "anthropic/claude-4.6-sonnet-20260217",
+    "canonical_matches": true,
+    "original_defaults": {},
+    "current_defaults": {},
+    "original_reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "max",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "supported_efforts": [
+        "max",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "medium"
+    },
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000003",
+      "input_cache_write": "0.00000375",
+      "input_cache_write_1h": "0.000006"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-4.6/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "85293fda90ca5f3ce0ed5ef51382080d3c9abb5111715b3dc658793ff65b7232",
+    "retrieved_at": "2026-09-22T12:25:50.941135+00:00",
+    "endpoints_count": 9,
+    "endpoint": "anthropic",
+    "provider_name": "Anthropic",
+    "endpoint_pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000003",
+      "input_cache_write": "0.00000375",
+      "input_cache_write_1h": "0.000006",
+      "discount": 0
+    },
+    "quantization": "unknown"
+  },
+  "sonnet5": {
+    "original_slug": "anthropic/claude-sonnet-5",
+    "current_slug": "anthropic/claude-sonnet-5",
+    "original_canonical": "anthropic/claude-sonnet-5-20260630",
+    "current_canonical": "anthropic/claude-sonnet-5-20260630",
+    "canonical_matches": true,
+    "original_defaults": {},
+    "current_defaults": {},
+    "original_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "high"
+    },
+    "current_reasoning": {
+      "mandatory": false,
+      "default_enabled": true,
+      "supported_efforts": [
+        "max",
+        "xhigh",
+        "high",
+        "medium",
+        "low"
+      ],
+      "default_effort": "high"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000002",
+      "input_cache_write": "0.0000025",
+      "input_cache_write_1h": "0.000004"
+    },
+    "endpoints_url": "https://openrouter.ai/api/v1/models/anthropic/claude-sonnet-5/endpoints",
+    "caveat": "Matching catalog identifiers do not prove unchanged provider execution. Fresh paired baselines are planned for every model.",
+    "endpoints_sha256": "78a292337a600f830f4b3efef5e1178688176fef6f8f9ee74025527d359a8418",
+    "retrieved_at": "2026-09-22T12:25:50.958472+00:00",
+    "endpoints_count": 10,
+    "endpoint": "anthropic",
+    "provider_name": "Anthropic",
+    "endpoint_pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000002",
+      "input_cache_write": "0.0000025",
+      "input_cache_write_1h": "0.000004",
+      "discount": 0
+    },
+    "quantization": "unknown"
+  }
+}

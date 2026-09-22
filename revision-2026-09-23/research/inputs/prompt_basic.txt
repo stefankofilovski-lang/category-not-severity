@@ -1,0 +1,15 @@
+Classify each of the following AI incidents according to the European Union AI Act risk level taxonomy.
+
+For each incident, assign exactly one risk level:
+- "prohibited" — the AI practice is banned under the EU AI Act
+- "high" — the AI system is high-risk under the EU AI Act
+- "transparency" — the AI system is subject only to transparency obligations
+- "minimal" — the AI system is minimal risk under the EU AI Act
+
+Use "not_ai_system" if what is described is not an AI system within the meaning of the Act.
+Use "insufficient_information" only if the record does not describe an identifiable AI system.
+
+Treat each incident independently. Base your answer only on the incident record provided.
+
+Respond with ONLY a JSON object, no markdown fences, no other text:
+{"sample_id": "<the incident's sample_id>", "risk_tier": "<one of: prohibited|high|transparency|minimal|not_ai_system|insufficient_information>", "rationale": "<one sentence>"}

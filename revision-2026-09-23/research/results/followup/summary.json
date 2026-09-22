@@ -1,0 +1,297 @@
+{
+  "analysed_at": "2026-09-22T18:24:28.046872+00:00",
+  "experiment": "expanded-evidence-followup-2026-09-22-v1",
+  "intended_calls": 784,
+  "started_calls": 784,
+  "finished_calls": 784,
+  "all_intended_calls_finished": true,
+  "coverage": {
+    "valid": 750,
+    "missing_content": 16,
+    "invalid_json": 10,
+    "invalid_schema": 1,
+    "request_failed": 7,
+    "unattempted": 0
+  },
+  "reported_cost_usd": "4.893542026",
+  "unresolved_charge_count": 0,
+  "case_ids": [
+    "S005",
+    "S006",
+    "S007",
+    "S008",
+    "S009",
+    "S010",
+    "S011",
+    "S013",
+    "S014",
+    "S015",
+    "S016",
+    "S018",
+    "S020",
+    "S021"
+  ],
+  "class_counts": {
+    "high": 9,
+    "prohibited": 1,
+    "not_ai_system": 1,
+    "minimal": 2,
+    "transparency": 1
+  },
+  "models": [
+    "gemini37f",
+    "gemini3f",
+    "gemma27b",
+    "gpt52",
+    "gpt56luna",
+    "gpt56sol",
+    "grok46",
+    "haiku45",
+    "kimi25",
+    "kimi3",
+    "qwen3827b",
+    "qwen38max",
+    "sonnet46",
+    "sonnet5"
+  ],
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260922,
+  "bootstrap_unit": "incident; all model/prompt/evidence cells share each resampling vector",
+  "reference": "historical expert labels, not reassessed against expanded packets",
+  "interpretation": "exploratory reference agreement; changed labels do not establish legal corrections",
+  "panel_qwk_policy": "mean of fixed 14-model panel; undefined if any included model statistic is undefined",
+  "panel": {
+    "naive_short": {
+      "exact": {
+        "value": 0.8163265306122448,
+        "ci95": [
+          0.7295918367346939,
+          0.8979591836734694
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "macro_f1": {
+        "value": 0.6419301053754836,
+        "ci95": [
+          0.2571423518370666,
+          0.6782694993150821
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "qwk": {
+        "value": 0.6552951118860165,
+        "ci95": [
+          0.4299390974022553,
+          0.7908378963524456
+        ],
+        "defined_bootstrap_draws": 9840,
+        "undefined_bootstrap_draws": 160
+      },
+      "valid_answers": 189,
+      "intended_answers": 196,
+      "defined_qwk_models": 14
+    },
+    "naive_expanded": {
+      "exact": {
+        "value": 0.8214285714285714,
+        "ci95": [
+          0.7193877551020408,
+          0.903061224489796
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "macro_f1": {
+        "value": 0.6688978369125428,
+        "ci95": [
+          0.26287925355645264,
+          0.7227618572681599
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "qwk": {
+        "value": 0.7229291056099735,
+        "ci95": [
+          0.4801040461979096,
+          0.8497070988426407
+        ],
+        "defined_bootstrap_draws": 9775,
+        "undefined_bootstrap_draws": 225
+      },
+      "valid_answers": 190,
+      "intended_answers": 196,
+      "defined_qwk_models": 14
+    },
+    "decomposed_short": {
+      "exact": {
+        "value": 0.7806122448979592,
+        "ci95": [
+          0.6479591836734693,
+          0.8979591836734694
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "macro_f1": {
+        "value": 0.6666975123382687,
+        "ci95": [
+          0.26235357227686396,
+          0.7230565730565731
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "qwk": {
+        "value": 0.7958271074793718,
+        "ci95": [
+          0.5072928845074999,
+          0.946815172295652
+        ],
+        "defined_bootstrap_draws": 9531,
+        "undefined_bootstrap_draws": 469
+      },
+      "valid_answers": 183,
+      "intended_answers": 196,
+      "defined_qwk_models": 14
+    },
+    "decomposed_expanded": {
+      "exact": {
+        "value": 0.7091836734693878,
+        "ci95": [
+          0.5561224489795918,
+          0.8469387755102041
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "macro_f1": {
+        "value": 0.6015865320487169,
+        "ci95": [
+          0.23875958760176982,
+          0.6895377803413516
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "qwk": {
+        "value": 0.6757073914807504,
+        "ci95": [
+          0.3619447302112749,
+          0.8648245298734231
+        ],
+        "defined_bootstrap_draws": 9840,
+        "undefined_bootstrap_draws": 160
+      },
+      "valid_answers": 188,
+      "intended_answers": 196,
+      "defined_qwk_models": 14
+    }
+  },
+  "expanded_minus_short": {
+    "naive": {
+      "intended_exact_delta": {
+        "value": 0.005102040816326521,
+        "ci95": [
+          -0.04081632653061223,
+          0.045918367346938785
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "common_exact_delta": {
+        "value": 0.001783930355358922,
+        "ci95": [
+          -0.035321821036106746,
+          0.038497217068645624
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "common_macro_f1_delta": {
+        "value": 0.007174429600900177,
+        "ci95": [
+          -0.015478904875333929,
+          0.031394847711811974
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "common_qwk_delta": {
+        "value": 0.061914008013297196,
+        "ci95": [
+          -0.005589527506329637,
+          0.12958771126972182
+        ],
+        "defined_bootstrap_draws": 9692,
+        "undefined_bootstrap_draws": 308
+      },
+      "classification_change_rate": {
+        "value": 0.09440559440559439,
+        "ci95": [
+          0.04591836734693877,
+          0.14953067765567762
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "common_valid_pairs": 187,
+      "intended_pairs": 196
+    },
+    "decomposed": {
+      "intended_exact_delta": {
+        "value": -0.07142857142857141,
+        "ci95": [
+          -0.13775510204081637,
+          -0.010204081632653053
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "common_exact_delta": {
+        "value": -0.08948194662480376,
+        "ci95": [
+          -0.15476190476190474,
+          -0.03231292517006802
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "common_macro_f1_delta": {
+        "value": -0.07187009419152271,
+        "ci95": [
+          -0.08483363141140396,
+          -0.014690912549230235
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "common_qwk_delta": {
+        "value": -0.10763071568455375,
+        "ci95": [
+          -0.16928385314416047,
+          -0.038942624411835755
+        ],
+        "defined_bootstrap_draws": 8756,
+        "undefined_bootstrap_draws": 1244
+      },
+      "classification_change_rate": {
+        "value": 0.13618524332810047,
+        "ci95": [
+          0.07136316064887492,
+          0.20408163265306123
+        ],
+        "defined_bootstrap_draws": 10000,
+        "undefined_bootstrap_draws": 0
+      },
+      "common_valid_pairs": 179,
+      "intended_pairs": 196
+    }
+  },
+  "request_sha256": "ec8f5dafda1c3feefa15b1b37c35db2c4f680867310c03dfe8ab56f9044cdb0a",
+  "attempt_ledger_sha256": "226fbcc5c2030cc6d09993b065ecfd1e5144e2a03f758870df4597fba17d2958",
+  "charge_reconciliations_sha256": "c98a8f1fcd3f6848a4e5f2cbef7e78e0143b45eef91a9af633d7890570c6039e",
+  "no_charge_timeout_observations": 1
+}

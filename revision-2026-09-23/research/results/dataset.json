@@ -1,0 +1,84 @@
+{
+  "export_date": "2026-08-10",
+  "export_rows": 1618,
+  "eligible_rows": 1618,
+  "sample_n": 150,
+  "evaluation_n": 144,
+  "seed": 2026,
+  "legacy_splits": {
+    "heldout": 106,
+    "dev": 44
+  },
+  "evaluation_legacy_splits": {
+    "heldout": 102,
+    "dev": 42
+  },
+  "year_min": 2012,
+  "year_max": 2026,
+  "description_median_chars": 358.0,
+  "description_min_chars": 64,
+  "description_max_chars": 599,
+  "strata": {
+    "control_pool": 45,
+    "employment": 13,
+    "biometrics": 13,
+    "justice_democracy": 13,
+    "education": 12,
+    "migration": 12,
+    "essential_services": 12,
+    "critical_infrastructure": 12,
+    "law_enforcement": 12
+  },
+  "domains": {
+    "none": 109,
+    "biometrics": 13,
+    "migration": 7,
+    "essential_services": 6,
+    "law_enforcement": 3,
+    "employment": 2,
+    "unclear": 2,
+    "education": 1,
+    "justice_democracy": 1
+  },
+  "confidence": {
+    "3": 96,
+    "2": 47,
+    "1": 1
+  },
+  "correction_fields": 19,
+  "correction_incidents": 10,
+  "driving_ids": [
+    "S008",
+    "S009",
+    "S016",
+    "S030",
+    "S037",
+    "S042",
+    "S050",
+    "S052",
+    "S062",
+    "S070",
+    "S071",
+    "S090",
+    "S138",
+    "S142",
+    "S146"
+  ],
+  "extra_evidence_ids": [
+    "S005",
+    "S006",
+    "S007",
+    "S008",
+    "S009",
+    "S010",
+    "S011",
+    "S013",
+    "S014",
+    "S015",
+    "S016",
+    "S018",
+    "S020",
+    "S021"
+  ],
+  "review_selection_n": 20
+}

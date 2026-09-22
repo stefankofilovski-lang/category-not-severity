@@ -1,0 +1,17 @@
+sample_id,field,from,to,reason
+S045,FINAL_risk_tier,prohibited,transparency,donation scam using generated disaster images - twin of S085/S122
+S045,L1_art5_prohibited,yes,no,donation scam using generated disaster images - twin of S085/S122
+S076,FINAL_risk_tier,prohibited,transparency,non-consensual deepfake pornography - twin of S063/S077/S149
+S076,L1_art5_prohibited,yes,no,non-consensual deepfake pornography - twin of S063/S077/S149
+S079,FINAL_risk_tier,prohibited,transparency,coordinated propaganda on a platform - moderation sits in the DSA (rubric Step 3)
+S079,L1_art5_prohibited,yes,no,coordinated propaganda on a platform - moderation sits in the DSA (rubric Step 3)
+S083,FINAL_risk_tier,prohibited,transparency,romance scam using a deepfake persona - twin of S091
+S083,L1_art5_prohibited,yes,no,romance scam using a deepfake persona - twin of S091
+S084,FINAL_risk_tier,prohibited,transparency,health-expert deepfakes selling supplements - twin of S125
+S084,L1_art5_prohibited,yes,no,health-expert deepfakes selling supplements - twin of S125
+S089,FINAL_risk_tier,prohibited,transparency,manipulated protest audio - twin of S096/S101/S134/S136
+S089,L1_art5_prohibited,yes,no,manipulated protest audio - twin of S096/S101/S134/S136
+S116,FINAL_risk_tier,prohibited,transparency,doctor deepfakes selling fake health products - twin of S084/S125
+S116,L1_art5_prohibited,yes,no,doctor deepfakes selling fake health products - twin of S084/S125
+S137,FINAL_risk_tier,prohibited,transparency,celebrity deepfake crypto scam - twin of S085/S128/S135
+S137,L1_art5_prohibited,yes,no,celebrity deepfake crypto scam - twin of S085/S128/S135

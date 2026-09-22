@@ -1,0 +1,50 @@
+You are classifying AI incidents under the EU AI Act (Regulation (EU) 2024/1689) by applying the Act's classification test step by step.
+
+FRAMING
+Answer this counterfactual: if the AI system involved in this incident were placed on the EU market or put into service today, which risk tier would it fall under? Classify the SYSTEM and the job it does based on the intended purpose and context of use, and NOT nased on the severity of the harm that ocurred in the incident. A failure can be fatal but not high risk if it is outside of Annex III, however a seemingly mundane failure can absolutely be high-risk if in the scope of Annex III. Assume the Act applies; ignore territorial and temporal scope. Each incident should be treated independantly using the fact solely from the record.
+
+GATE — Art. 3(1). Is this an AI system at all in the first palce? It must infer, from input it receives, how to generate outputs such as predictions, content, recommendations or decisions. Where the record shows a purely deterministic, rule-based process with no inferential element, answer "not_ai_system" and stop. This should be significantly rare given the broad definition of Art. 3(1).
+
+STEP 1 — Art. 5(1): prohibited practices. Interpret narrowly because this is a prohibitory provision.
+(a) subliminal or purposefully manipulative/deceptive techniques that materially distort behaviour by appreciably impairing informed decision-making, causing or likely to cause significant harm. Requires evidence that the system was trained or configured (e.g. by system prompt) to use such a technique; intent to harm is not required, but ordinary hallucinations and generic model limitations do not qualify. Emergently manipulative systems (e.g. engagement-optimised recommenders never designed to manipulate) → "unclear".
+(b) exploitation of vulnerabilities (age, disability, social or economic situation). Read "vulnerability" as the person's whole circumstances, and "exploit" broadly in the victim's favour: taking action that benefits the operator without direct harm can suffice.
+(c) social scoring. This does not prohibit building scoring models; it prohibits using a social score in an UNRELATED social context, or treating a person detrimentally in a way disproportionate to the scored behaviour.
+(d) predicting the risk of criminal offending based SOLELY on profiling or personality traits. Assisting human analysts using objective, verifiable evidence linked to actual or suspected criminal activity is not prohibited.
+(e) untargeted scraping of facial images from the internet or CCTV to build or expand facial-recognition databases.
+(f) emotion inference in the workplace or in education institutions. The medical/safety exception is strict: it needs clear institutional backing and a legitimate, verifiable purpose.
+(g) biometric categorisation to infer race, political opinions, trade union membership, religious or philosophical beliefs, sex life or sexual orientation. That list is exhaustive. Filtering or labelling lawfully acquired biometric datasets, and categorisation of biometric data in the area of law enforcement, are not prohibited.
+(h) real-time remote biometric identification in publicly accessible spaces for law enforcement (publicly accessible includes private property left open to the public), unless strictly necessary for targeted search for victims of abduction/trafficking/sexual exploitation or missing persons; prevention of a specific imminent threat to life or of a terrorist attack; or locating a suspect for offences punishable by at least four years.
+If a prohibition applies → risk_tier "prohibited".
+
+STEP 2 — Art. 6(1) / Annex I: is the AI a product or a safety component of a product covered by Union harmonisation legislation AND required to undergo third-party conformity assessment? Rule of thumb: if that product type NORMALLY requires third-party assessment, treat it as such unless the record shows otherwise; if it normally self-certifies, treat it as self-certifying unless the record shows otherwise; if a reasonable person cannot tell what the product is, answer "unclear".
+Normally third-party: motor vehicles, motorcycles, agricultural vehicles, aircraft, rail, marine equipment, lifts, cableways, gas appliances, medical devices class IIa/IIb/III, IVDs class B/C/D, PPE cat. II/III, pressure equipment cat. II-IV, ATEX cat. 1-2.
+Normally self-certifying: general industrial machinery (warehouse/picking robots, robotic arms, CNC, packaging lines), toys, radio equipment, medical devices class I, IVDs class A, PPE cat. I, pressure equipment cat. I, ATEX cat. 3.
+Two counter-intuitive exceptions: (i) machinery where the AI IS the safety function with self-evolving machine-learning behaviour is third-party assessed; (ii) medical software is rarely self-certified — a step counter is, but e.g. a melanoma detector almost certainly is not.
+If yes → risk_tier "high"; skip steps 4 and 5 (the Art. 6(3) derogation does not apply to the Annex I route).
+
+STEP 3 — Art. 6(2) / Annex III: which of the eight areas, if any, does the use fall within?
+biometrics; critical_infrastructure (safety components for digital infrastructure, road traffic, water/gas/heating/electricity); education (admission, evaluation, level assessment, cheating monitoring); employment (recruitment, selection, promotion, termination, task allocation, monitoring); essential_services (eligibility for public benefits, creditworthiness except financial-fraud detection, life and health insurance risk/pricing, emergency triage); law_enforcement; migration (asylum, visa, residence, border identification); justice_democracy (assisting judicial authorities, ADR with legal effect, influencing elections or voting behaviour).
+Interpretive rules:
+- Annex III presupposes the INTENDED USER. A system built for law enforcement that criminals obtain does not become law_enforcement; criminal misuse of AI is "none".
+- Where two areas fit, the system's underlying purpose decides, not the deploying institution's general character.
+- justice_democracy for election influence requires that the system was BUILT OR DEPLOYED for that purpose, judged by how it was built and put into service. A general-purpose voice or image generator misused in a campaign is not in this area; a tool the same actor developed and deployed to influence voters is.
+- employment covers "work-related relationships"; no contract of employment is required, so gig and platform work counts.
+- Content moderation belongs to the Digital Services Act and product recommendation to consumer law; neither is an Annex III area. Answer "none".
+If none → go to STEP 6.
+
+STEP 4 — Art. 6(3) derogation. Within an Annex III area, the system is not high-risk if it only: (a) performs a narrow procedural task; (b) improves the result of a previously completed human activity; (c) detects decision-making patterns or deviations and is not meant to replace or INFLUENCE the previously completed human assessment without proper human review; or (d) performs a preparatory task.
+- Flagging people for human investigation is normally NOT exempt: on the wording of (c), the system that decides who is flagged influences the outcome.
+- Apply an exemption only where the record contains concrete evidence that the system performs one of these limited roles. Where the system appears to drive or select decisions and the record is silent, the exemption does not apply.
+- Where the system's role cannot be identified at all, answer "unclear".
+
+STEP 5 — profiling override, Art. 6(3) second subparagraph. Does the system profile natural persons — evaluate personal aspects such as work performance, economic situation, health, reliability, behaviour, interests or location from their data? If yes, no derogation is available and an Annex III system is high-risk.
+If in an Annex III area AND (no derogation applies OR profiling) → risk_tier "high".
+
+STEP 6 — Art. 50 transparency. Record this INDEPENDENTLY, even for systems already classified prohibited or high: is the system intended to interact directly with natural persons (chatbot), does it generate synthetic audio, image, video or text (including deep fakes), or is it an emotion-recognition or biometric-categorisation system? If the tier is not already set and this is yes → risk_tier "transparency".
+
+STEP 7 — otherwise → risk_tier "minimal".
+
+Use "insufficient_information" only if the record does not let you identify the system's function and deployment context well enough to run this test.
+
+Respond with ONLY a JSON object, no markdown fences, no other text:
+{"sample_id": "<the incident's sample_id>", "steps": {"art3_1": "<yes|not_ai_system>", "art5": "<no|yes|unclear>", "annex_i": "<no|yes|unclear>", "annex_iii": "<none|biometrics|critical_infrastructure|education|employment|essential_services|law_enforcement|migration|justice_democracy|unclear>", "derogation": "<not_applicable|applies|does_not_apply|unclear>", "profiling": "<not_applicable|yes|no|unclear>", "art50": "<no|yes|unclear>"}, "risk_tier": "<one of: prohibited|high|transparency|minimal|not_ai_system|insufficient_information>", "rationale": "<one sentence>"}

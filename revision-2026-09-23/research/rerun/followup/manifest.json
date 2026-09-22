@@ -1,0 +1,37 @@
+{
+  "experiment": "expanded-evidence-followup-2026-09-22-v1",
+  "prepared_at": "2026-09-22T12:31:12.693829+00:00",
+  "record_type": "Public research metadata derived from the preparation record and completed execution",
+  "pre_run_status": "prepared_not_executed",
+  "status": "completed",
+  "execution_summary": {
+    "attempted_calls": 784,
+    "valid_category_answers": 750,
+    "unsuccessful_answers": 34,
+    "parsed_results": "../../results/followup/cells.csv"
+  },
+  "request_count": 784,
+  "case_count": 14,
+  "model_count": 14,
+  "evidence_conditions": [
+    "short",
+    "expanded"
+  ],
+  "prompt_conditions": [
+    "naive",
+    "decomposed"
+  ],
+  "requests_sha256": "ec8f5dafda1c3feefa15b1b37c35db2c4f680867310c03dfe8ab56f9044cdb0a",
+  "packets_sha256": "1996617067ce579ce5a434680619cec99dc43b9586f11073d74c4ecde5a9fd0a",
+  "model_bindings_sha256": "3e5b583904856b5b4821c45e657dae61857d057c3cf35c7c89c7322525539123",
+  "reference_sha256": "5c6f64bb07f4b2cda539089c373e0ccb5456cd0c84b0cfa2a8294f740c3c4336",
+  "prompt_sha256": {
+    "naive": "d911b9fe6cc476ceb8307d0f83e3c50e17c36d0ebfc0c0c8d4506d3702af612c",
+    "decomposed": "ea5b24273e4288cb99516125ffb267e1f2dd96dde63e67fea3e84ab3fdd4dbbd"
+  },
+  "random_seed": 20260922,
+  "author_verified": false,
+  "historical_source_reconstruction": false,
+  "reference_policy": "Unchanged historical expert reference; not freshly adjudicated against the new packets.",
+  "scope": "Within-current-model short-versus-expanded evidence comparison; not independent legal validation."
+}

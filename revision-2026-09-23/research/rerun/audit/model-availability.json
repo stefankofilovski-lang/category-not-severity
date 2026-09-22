@@ -1,0 +1,253 @@
+[
+  {
+    "model_key": "sonnet46",
+    "original_slug": "anthropic/claude-sonnet-4.6",
+    "available": true,
+    "canonical_slug": "anthropic/claude-4.6-sonnet-20260217",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000003",
+      "input_cache_write": "0.00000375",
+      "input_cache_write_1h": "0.000006"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "gpt52",
+    "original_slug": "openai/gpt-5.2",
+    "available": true,
+    "canonical_slug": "openai/gpt-5.2-20251211",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.00000175",
+      "completion": "0.000014",
+      "web_search": "0.01",
+      "input_cache_read": "0.000000175"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "gemini3f",
+    "original_slug": "google/gemini-3-flash-preview",
+    "available": true,
+    "canonical_slug": "google/gemini-3-flash-preview-20251217",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.0000005",
+      "completion": "0.000003",
+      "image": "0.0000005",
+      "audio": "0.000001",
+      "input_audio_cache": "0.0000001",
+      "web_search": "0.014",
+      "internal_reasoning": "0.000003",
+      "input_cache_read": "0.00000005",
+      "input_cache_write": "0.0000000833333333333333"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "gemma27b",
+    "original_slug": "google/gemma-3-27b-it",
+    "available": true,
+    "canonical_slug": "google/gemma-3-27b-it",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.00000008",
+      "completion": "0.00000045",
+      "input_cache_read": "0.00000004"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "kimi25",
+    "original_slug": "moonshotai/kimi-k2.5",
+    "available": true,
+    "canonical_slug": "moonshotai/kimi-k2.5-0127",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.00000045",
+      "completion": "0.00000225",
+      "input_cache_read": "0.00000007"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "haiku45",
+    "original_slug": "anthropic/claude-haiku-4.5",
+    "available": true,
+    "canonical_slug": "anthropic/claude-4.5-haiku-20251001",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.000005",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000001",
+      "input_cache_write": "0.00000125",
+      "input_cache_write_1h": "0.000002"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "sonnet5",
+    "original_slug": "anthropic/claude-sonnet-5",
+    "available": true,
+    "canonical_slug": "anthropic/claude-sonnet-5-20260630",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000002",
+      "input_cache_write": "0.0000025",
+      "input_cache_write_1h": "0.000004"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "gemini37f",
+    "original_slug": "google/gemini-3.7-flash",
+    "available": true,
+    "canonical_slug": "google/gemini-3.7-flash-20260813",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.00000075",
+      "completion": "0.00000375",
+      "image": "0.00000075",
+      "audio": "0.00000075",
+      "input_audio_cache": "0.000000075",
+      "web_search": "0.014",
+      "internal_reasoning": "0.00000375",
+      "input_cache_read": "0.000000075",
+      "input_cache_write": "0.0000000416666666666667"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "kimi3",
+    "original_slug": "moonshotai/kimi-k3",
+    "available": true,
+    "canonical_slug": "moonshotai/kimi-k3-20260715",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "input_cache_read": "0.0000003"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "qwen38max",
+    "original_slug": "qwen/qwen3.8-max",
+    "available": false,
+    "canonical_slug": null,
+    "alias_target": null,
+    "pricing": null,
+    "candidate_ids": [
+      "qwen/qwen3.8-max-0902",
+      "qwen/qwen3.8-flash",
+      "qwen/qwen3.8-27b",
+      "qwen/qwen3.8-27b:free",
+      "qwen/qwen3.8-2.4t-a95b"
+    ],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "qwen3827b",
+    "original_slug": "qwen/qwen3.8-27b",
+    "available": true,
+    "canonical_slug": "qwen/qwen3.8-27b-20260814",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.00000042",
+      "completion": "0.000003",
+      "input_cache_read": "0.000000085"
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "gpt56sol",
+    "original_slug": "openai/gpt-5.6-sol",
+    "available": true,
+    "canonical_slug": "openai/gpt-5.6-sol-20260709",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.00001",
+      "web_search": "0.01",
+      "input_cache_read": "0.0000002",
+      "input_cache_write": "0.0000025",
+      "overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.000004",
+          "completion": "0.000015",
+          "input_cache_read": "0.0000004",
+          "input_cache_write": "0.000005"
+        }
+      ]
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "gpt56luna",
+    "original_slug": "openai/gpt-5.6-luna",
+    "available": true,
+    "canonical_slug": "openai/gpt-5.6-luna-20260709",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000012",
+      "web_search": "0.01",
+      "input_cache_read": "0.00000002",
+      "input_cache_write": "0.00000025",
+      "overrides": [
+        {
+          "min_prompt_tokens": 272000,
+          "prompt": "0.0000004",
+          "completion": "0.0000018",
+          "input_cache_read": "0.00000004",
+          "input_cache_write": "0.0000005"
+        }
+      ]
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  },
+  {
+    "model_key": "grok46",
+    "original_slug": "x-ai/grok-4.6",
+    "available": true,
+    "canonical_slug": "x-ai/grok-4.6-20260810",
+    "alias_target": null,
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000006",
+      "web_search": "0.005",
+      "input_cache_read": "0.0000005",
+      "overrides": [
+        {
+          "min_prompt_tokens": 200000,
+          "prompt": "0.000004",
+          "completion": "0.000012",
+          "input_cache_read": "0.000001"
+        }
+      ]
+    },
+    "candidate_ids": [],
+    "checked_at": "2026-09-22T12:07:12.268323+00:00"
+  }
+]

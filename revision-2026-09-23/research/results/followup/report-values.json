@@ -1,0 +1,19 @@
+{
+  "valid_answers": 750,
+  "failed_answers": 34,
+  "paircounts": {
+    "naive": {
+      "common": 187,
+      "changed": 18,
+      "toward": 9,
+      "away": 9
+    },
+    "decomposed": {
+      "common": 179,
+      "changed": 26,
+      "toward": 3,
+      "away": 20
+    }
+  },
+  "cost_usd": "4.893542026"
+}
